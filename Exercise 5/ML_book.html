@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="AI, Artificial Intelligence, Courses, Books, Machine Learning">
+    <meta name="author" content="George Efraim Karekos, George Michalis"> 
+    <title>Machine Learning Engineering in Action - Full Book</title>
+    <link rel="stylesheet" type ="text/css" href="styles.css">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <picture>
+                <source srcset="./images/small_logo.png"
+                        media="(max-width: 700px)">
+                <source srcset="./images/logo.png"
+                        media="(max-width: 1100px)">
+                <img src="./images/logo.png" class="logo">
+            </picture>
+            <nav>
+                <ul class="ul_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="validation.html">Register</a></li>
+                </ul>
+                <ul class="ul_list_for_phones">
+                    <li><a href="#">Menu</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="validation.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <nav>
+        <a href="machine_learning.html" ><img src="./images/back-button-white.png" class="return-button"></a>
+    </nav>
+
+    <!-- Main content section -->
+    <main>
+        <section class="paragraph">
+            <div class="image-container">
+                <picture>
+                    <source srcset="./images/Wilson-ML-HI_HR.png" media="(min-width: 1101px)">
+                    <source srcset="./images/Wilson-ML-HI_MR.png" media="(min-width: 701px)">
+                    <source srcset="./images/Wilson-ML-HI_LR.png" media="(max-width: 700px)">
+                    <img 
+                        class="book_image" 
+                        src="./images/Wilson-ML-HI_LR.png" 
+                        alt="Machine Learning Engineering in Action Book Cover">
+                </picture>
+            </div>
+            <div class="text-content">
+                <h1>Machine Learning Engineering in Action</h1>
+                <p><strong>Authors:</strong> Ben Wilson</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Summary:</strong> This book introduces the essential practices and tools for machine learning engineers to design, deploy, and monitor systems that operate in production environments. It combines the technical and operational aspects needed to make machine learning engineering successful.</p>
+                <div class="rating">
+                    <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span>(7 reviews)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return to educational material subcategory -->
+
+        <!-- Table of Contents -->
+        <section class="toc" id="toc">
+            <h2>Table of Contents</h2>
+            <h3>Part 1: An Introduction to Machine Learning Engineering</h3>
+            <ul class="toc-list">
+                <li><a href="#chapter1">Chapter 1: What Is a Machine Learning Engineer?</a></li>
+                <li><a href="#chapter2">Chapter 2: Your Data Science Could Use Some Engineering</a></li>
+                <li><a href="#chapter3">Chapter 3: Before You Model: Planning and Scoping a Project</a></li>
+                <li><a href="#chapter4">Chapter 4: Before You Model: Communication and Logistics of Projects</a></li>
+                <li><a href="#chapter5">Chapter 5: Experimentation in Action: Planning and Researching an ML Project</a></li>
+                <li><a href="#chapter6">Chapter 6: Experimentation in Action: Testing and Evaluating a Project</a></li>
+                <li><a href="#chapter7">Chapter 7: Experimentation in Action: Moving from Prototype to MVP</a></li>
+                <li><a href="#chapter8">Chapter 8: Experimentation in Action: Finalizing an MVP with MLflow and Runtime Optimization</a></li>
+            </ul>
+
+            <h3>Part 2: Preparing for Production: Creating Maintainable ML</h3>
+            <ul class="toc-list">
+                <li><a href="#chapter9">Chapter 9: Modularity for ML: Writing Testable and Legible Code</a></li>
+                <li><a href="#chapter10">Chapter 10: Standards of Coding and Creating Maintainable ML Code</a></li>
+                <li><a href="#chapter11">Chapter 11: Model Measurement and Why It’s So Important</a></li>
+                <li><a href="#chapter12">Chapter 12: Holding on to Your Gains by Watching for Drift</a></li>
+                <li><a href="#chapter13">Chapter 13: ML Development Hubris</a></li>
+            </ul>
+
+            <h3>Part 3: Developing Production Machine Learning Code</h3>
+            <ul class="toc-list">
+                <li><a href="#chapter14">Chapter 14: Writing Production Code</a></li>
+                <li><a href="#chapter15">Chapter 15: Quality and Acceptance Testing</a></li>
+                <li><a href="#chapter16">Chapter 16: Production Infrastructure</a></li>
+            </ul>
+
+            <h3>Appendices</h3>
+            <ul class="toc-list">
+                <li><a href="#appendixA">Appendix A: Big O (and How to Think About Runtime Performance)</a></li>
+                <li><a href="#appendixB">Appendix B: Setting Up a Development Environment</a></li>
+            </ul>
+        </section>
+
+
+        <h1 class="content-label">Content of each chapter</h1>
+
+        <!-- Chapter 1 Content -->
+        <section id="chapter1" class="chapter">
+
+            <h2>Chapter 1: What Is a Machine Learning Engineer?</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>                
+                <ul>
+                    <li>The scope of knowledge and skills for machine learning engineers</li>
+                    <li>The six fundamental aspects of applied machine learning project work</li>
+                    <li>The functional purpose of machine learning engineers</li>
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <!-- Chapter 2 Content -->
+        <section id="chapter2" class="chapter">
+
+            <h2>Chapter 2: Your Data Science Could Use Some Engineering</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Elucidating the differences between a data scientist and an ML engineer</li>
+                    <li>Focusing on simplicity in all project work to reduce risk</li>
+                    <li>Applying Agile fundamentals to ML project work</li>
+                    <li>Illustrating the differences and similarities between DevOps and MLOps</li>
+                </ul>
+            </div>
+            
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter3" class="chapter">
+
+            <h2>Chapter 3: Before You Model: Planning and Scoping a Project</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Defining effective planning strategies for ML project work</li>
+                    <li>Using efficient methods to evaluate potential solutions to an ML problem</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter4" class="chapter">
+
+            <h2>Chapter 4: Before You Model: Communication and Logistics of Projects</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Structuring planning meetings for ML project work</li>
+                    <li>Soliciting feedback from a cross-functional team to ensure project health</li>
+                    <li>Conducting research, experimentation, and prototyping to minimize risk</li>
+                    <li>Including business rules logic early in a project</li>
+                    <li>Using communication strategies to engage nontechnical team members</li>
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter5" class="chapter">
+
+            <h2>Chapter 5: Experimentation in Action: Planning and Researching an ML Project</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>The details of a project’s research phase</li>
+                    <li>The process and methodology of conducting solution experimentation for a project</li>
+                </ul>
+            </div>
+            
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter6" class="chapter">
+
+            <h2>Chapter 6: Experimentation in Action: Testing and Evaluating a Project</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Evaluating potential approaches for an ML project</li>
+                    <li>Objectively selecting an approach for a project’s implementation</li>
+                </ul>
+            </div>
+            
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter7" class="chapter">
+
+            <h2>Chapter 7: Experimentation in Action: Moving from Prototype to MVP</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Techniques for hyperparameter tuning and the benefits of automated approaches</li>
+                    <li>Execution options for improving the performance of hyperparameter optimization</li>
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter8" class="chapter">
+
+            <h2>Chapter 8: Experimentation in Action: Finalizing an MVP with MLflow and Runtime Optimization</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Approaches, tools, and methods to version-control ML code, models, and experiment results</li>
+                    <li>Scalable solutions for model training and inference</li>
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter9" class="chapter">
+
+            <h2>Chapter 9: Modularity for ML: Writing Testable and Legible Code</h2>
+           
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Demonstrating why monolithic script-coding patterns make ML projects more complex</li>
+                    <li>Understanding the complexity of troubleshooting non-abstracted code</li>
+                    <li>Applying basic abstraction to ML projects</li>   
+                    <li>Implementing testable designs in ML code bases</li>  
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter10" class="chapter">
+
+            <h2>Chapter 10: Standards of Coding and Creating Maintainable ML Code</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Identifying ML code smells and how to correct them</li>
+                    <li>Reducing code complexity in ML projects</li>
+                    <li>Currying for cleaner and more understandable code</li>
+                    <li>Applying proper exception handling in ML code bases</li>    
+                    <li>Understanding side effects and how they can create bugs</li>
+                    <li>Simplifying nested logic to improve comprehension</li>  
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter11" class="chapter">
+
+            <h2>Chapter 11: Model Measurement and Why It’s So Important</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Methodologies for determining the impact of a model</li> 
+                    <li>A/B testing approaches for attribution data collection</li>  
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter12" class="chapter">
+
+            <h2>Chapter 12: Holding on to Your Gains by Watching for Drift</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Identifying and monitoring for drift in production solutions</li> 
+                    <li>Defining responses to detected drift</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter13" class="chapter">
+
+            <h2>Chapter 13: ML Development Hubris</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Applying refactoring to overengineered implementations to increase development velocity</li> 
+                    <li>Identifying code to target for refactoring</li> 
+                    <li>Establishing simplicity-driven development practices</li> 
+                    <li>Adopting new technologies via sustainable means</li> 
+                    <li>Comparing build, buy, and prior art in implementations</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter14" class="chapter">
+
+            <h2>Chapter 14: Writing Production Code</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Validating feature data before attempting to use it for a model</li> 
+                    <li>Monitoring features in production</li> 
+                    <li>Monitoring all aspects of a production model life cycle</li> 
+                    <li>Approaching projects with the goal of solving them in the simplest manner possible</li> 
+                    <li>Defining a standard code architecture for ML projects</li> 
+                    <li>Avoiding cargo cult behavior in ML</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter15" class="chapter">
+
+            <h2>Chapter 15: Quality and Acceptance Testing</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Establishing consistency for data sources used in ML</li>
+                    <li>Handling prediction failures gracefully with fallback logic</li>
+                    <li>Providing quality assurance for ML predictions</li>
+                    <li>Implementing explainable solutions</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="chapter16" class="chapter">
+            <h2>Chapter 16: Production Infrastructure</h2>
+
+            <div class="chapter-caption">
+                <h3>This chapter covers</h3>
+                <ul>
+                    <li>Implementing passive retraining with the use of a model registry</li> 
+                    <li>Utilizing a feature store for model training and inference</li> 
+                    <li>Selecting an appropriate serving architecture for ML solutions</li> 
+                </ul>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <!-- Appendices -->
+        <section id="appendixA" class="chapter">
+            <h2>Appendix A: Big O (and How to Think About Runtime Performance)</h2>
+            
+            <div class="chapter-caption">
+                <p>The goal of this appendix is to focus on understanding both the runtime characteristics of control 
+                    code (all the code in your project that isn’t involved in training a model) and the ML algorithm itself 
+                    that is being trained.</p>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+
+        <section id="appendixB" class="chapter">
+            <h2>Appendix B: Setting Up a Development Environment</h2>
+
+            <div class="chapter-caption">
+                <p>While many options exist for creating isolable environments for development of new projects, 
+                    this appendix provides guidance on using Docker along with Conda’s package management suite of tools, 
+                    just as the companion repository to this book does.</p>
+            </div>
+
+            <p class="back-button"><a href="#toc">Back to Table of Contents</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IT E-Learning Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

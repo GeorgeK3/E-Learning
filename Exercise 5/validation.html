@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <picture>
+                <source srcset="./images/small_logo.png" media="(max-width: 700px)">
+                <source srcset="./images/logo.png" media="(max-width: 1100px)">
+                <img src="./images/logo.png" class="logo" alt="Website Logo">
+            </picture>
+            <nav>
+                <ul class="ul_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="validation.html">Register</a></li>
+                </ul>
+                <ul class="ul_list_for_phones">
+                    <li><a href="#">Menu</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="validation.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-wrapper">
+            <div class="registration-box">
+                <h1>User Registration</h1>
+                <form id="registrationForm" action="#" method="post">
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="e.g., John Doe">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" list="email-domains" required placeholder="e.g., example@example.com">
+                        <datalist id="email-domains">
+                            <!--Added dynamically using javascript-->>
+                        </datalist>
+                        
+                        <label for="address">Home Address:</label>
+                        <input type="text" id="address" name="address" required>
+                        
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                        
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g., 1234567890">
+                    </fieldset>
+
+                    <!-- Account Details -->
+                    <fieldset>
+                        <legend>Account Details</legend>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+                    </fieldset>
+
+                    <!-- Communication Preferences -->
+                    <fieldset>
+                        <legend>Communication Preferences</legend>
+                        <label>Select Method:</label>
+                        <select name="communicationMethod" id="communicationMethod">
+                            <option value="email">Email</option>
+                            <option value="sms">SMS</option>
+                            <option value="viber">Viber</option>
+                            <option value="whatsapp">WhatsApp</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Questionnaire -->
+                    <fieldset>
+                        <legend>Questionnaire</legend>
+                        <label>Education Level:</label>
+                        <select name="educationLevel">
+                            <option value="highschool">High School</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                        </select>
+
+                        <label>Profession:</label>
+                        <input list="professions" name="profession" required>
+                        <datalist id="professions">
+                            <option value="Senior Software Engineer"></option>
+                            <option value="Senior Database Administrator"></option>
+                            <option value="Junior Software Engineer"></option>
+                            <option value="Webmaster"></option>
+                            <option value="Help Desk Technician"></option>
+                            <option value="Network Engineer"></option>
+                        </datalist>
+
+                        <label>Years of Experience:</label>
+                        <input type="number" name="experience" required min="0">
+
+                        <label>Are you willing to attend seminars?</label>
+                        <select name="seminar">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+
+                        <label for="additionalInfo">Additional Information:</label>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 IT E-Learning Platform. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/* Base styling for the document */
+body {
+    background-color: #059ef6;
+    margin: 0;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+/* Clears floats in the header */
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Container styling for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation styling */
+.container nav {
+    float: left;
+}
+
+/* Navigation list styling */
+.container nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* List item styling in the navigation */
+.container nav li {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* Navigation link styling */
+.container nav a {
+    color: #11baed;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hover effect for navigation links */
+.container nav a:hover {
+    color: black;
+}
+
+/* Underline effect for navigation links on hover */
+.container nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #444;
+    position: absolute;
+    top: 65px;
+    width: 0%;
+    transition: all ease-in-out 400ms;
+}
+
+/* Expands underline effect on hover */
+.container nav a:hover::before {
+    width: 100%;
+}
+
+/* Section heading styling */
+.home-content h2,.paragraph h2 {
+    color: white;
+    font-size: 28px;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+.paragraph h1{
+    color:white;
+}
+
+/* Paragraph styling */
+.home-content p,.paragraph p {
+    color: white;
+    padding-bottom: 30px;
+}
+
+/* Main content area */
+main {
+    padding-left: 100px;
+}
+
+/* Paragraph overflow handling */
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-right: 100px;
+}
+
+/* Footer styling */
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Selection text styling */
+::selection {
+    background-color: white;
+    color: black;
+}
+
+/* Logo styling */
+.logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+}
+
+/* Image styling for home page */
+.home_image {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: 450px;
+}
+
+/* Categories list styling */
+ul.styled-list {
+    list-style-type: none;
+    padding-top:30px;
+    padding: 0;
+    color: white;
+}
+
+/* List items within categories */
+ul.styled-list > li {
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    width: 30%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Icon styling within list */
+ul.styled-list img.list-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+/* Nested list styling in categories */
+ul.styled-list ul {
+    margin-left: 60px;
+    padding-left: 0;
+}
+
+/* Links within nested lists */
+ul.styled-list li ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for links in nested lists */
+ul.styled-list li ul li a:hover {
+    color: black;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+/* Prefix for nested list items */
+ul.styled-list li ul li::before {
+    content: "- ";
+    color: white;
+}
+
+/* Nested list item styling */
+ul.styled-list li ul li {
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: white;
+}
+
+/* Product list layout styling */
+.product-list-container {
+    display: block;
+    gap: 20px;
+    padding: 20px;
+    margin-right:20px;
+}
+
+/* Individual product card styling */
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    user-select: text;
+    width: 22%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Product image styling */
+.product-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Product description styling */
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-right: 0;
+}
+
+/* Styling for product producer and size */
+.product-producer, .product-size {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+    padding-right: 0;
+}
+
+/* Product rating styling */
+.product-rating {
+    font-size: 14px;
+    padding-right: 0;
+}
+
+/* Filled star styling for ratings */
+.checked {
+    color: black;
+}
+
+/* Table of Contents styling */
+.toc {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 80px;
+    border-radius: 22px;
+    border: 2px solid #ccc;
+    margin-right:100px;
+}
+
+.toc h2{
+    color:black; 
+    font-size:36px;
+}
+
+/* Selected text styling within toc */
+.toc ::selection,.bio p::selection {
+    color: #059ef6;
+    background-color: black;
+}
+
+/* Offset for internal links in toc */
+.toc::before {
+    content: "";
+    display: block;
+    margin-top: -20px;
+    visibility: hidden;
+}
+
+/* Table of Contents links */
+.toc-list li a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+/* Hover effect for toc links */
+.toc-list li a:hover {
+    color: #059ef6;
+    font-size: 30px;
+    transition: 400ms;
+}
+
+/* Styling for the "Contents" label */
+.content-label{
+    color:white; 
+    font-size:36px;
+}
+
+/* Chapter styling */
+.chapter {
+    padding-left: 5px;
+}
+
+/* Chapter headings */
+.chapter h2 {
+    text-decoration: underline;
+    color: white;
+    font-size: 28px;
+}
+
+/* Internal link offset for chapter */
+.chapter::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+/* Back button styling */
+.back-button a {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hover effect for back button */
+.back-button a:hover {
+    font-size: 20px;
+    transition: 400ms;
+}
+
+/* Return button styling */
+.return-button {
+    width: 50px;
+    height: 50px;
+    margin-left: -270px;
+    padding-left: 10px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect for return button */
+.return-button:hover {
+    content: url('./images/back-button.png');
+}
+
+/* Book image styling */
+.book_image {
+    width: 300px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 60px;
+}
+
+/* Rating section styling */
+.rating {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    margin-right: 100px;
+}
+
+/* Chapter caption styling */
+.chapter-caption {
+    color: white;
+    width: 80%;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+/* Caption heading within chapters */
+.chapter-caption h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Caption list styling */
+.chapter-caption ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* List items in chapter caption */
+.chapter-caption li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/* About Us section */
+.about-us {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.about-us h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+/* Team member card styling */
+.team-member {
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for team member card */
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar styling in team member card */
+.team-member .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Bio styling within team member card */
+.team-member .bio {
+    text-align: left;
+}
+
+.team-member .bio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #059ef6;
+}
+
+.team-member .bio p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Video image styling */
+.video_image {
+    width: 480px;
+    height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 60px;
+}
+
+
+/* Responsive iframe styling with 3:2 aspect ratio */
+iframe {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
+

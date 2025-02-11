@@ -1,0 +1,820 @@
+/* Base styling for the document */
+body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: #059ef6;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+/* Clears floats in the header */
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Container styling for layout */
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation styling */
+.container nav {
+    float: left;
+}
+
+/* Navigation list styling */
+.container nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* List item styling in the navigation */
+.container nav li {
+    display: inline-block;
+    margin-left: 35px;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* Navigation link styling */
+.container nav a {
+    color: #11baed;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Main container */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Image styling */
+.home_image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Default content styling */
+.home-content {
+    flex: 1 1 100%; 
+    text-align: center; 
+    max-width: 100vw; 
+}
+
+/* Section heading styling */
+.home-content h2,.paragraph h2 {
+    color: white;
+    font-size: 28px;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+.paragraph h1{
+    color:white;
+}
+
+/* Paragraph styling */
+.home-content p,.paragraph p {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.paragraph {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding-left: 100px;
+}
+
+/* Paragraph overflow handling */
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-right: 100px;
+}
+
+/* Footer styling */
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Selection text styling */
+::selection {
+    background-color: white;
+    color: black;
+}
+
+/* Logo styling */
+.logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+}
+
+/* ============== CATEGORIES ============== */
+ul.styled-list {
+    list-style-type: none;
+    padding-top: 30px;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.styled-list > li {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    width: 30%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul.styled-list img.list-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+ul.styled-list li ul li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul.styled-list li ul li a:hover {
+    color: black;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+ul.styled-list li ul li::before {
+    color: white;
+}
+
+ul.styled-list li ul li {
+    list-style-type: none;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: white;
+}
+
+/* ============== PRODUCTS ============== */
+/* Product list layout styling */
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-right:100px;
+}
+
+/* Individual product card styling */
+.product-card {
+    user-select: text;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Product image styling */
+.product-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Product description styling */
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-right: 0;
+}
+
+/* Styling for product producer and size */
+.product-producer, .product-size {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+    padding-right: 0;
+}
+
+/* Product rating styling */
+.product-rating {
+    font-size: 14px;
+    padding-right: 0;
+}
+
+/* Filled star styling for ratings */
+.checked {
+    color: black;
+}
+
+/* ============== BOOK AND VIDEO ============== */
+/* Table of Contents styling */
+.toc {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 80px;
+    border-radius: 22px;
+    border: 2px solid #ccc;
+    margin-right:100px;
+}
+
+.toc h2{
+    color:black; 
+    font-size:36px;
+}
+
+/* Selected text styling within toc */
+.toc ::selection,.bio p::selection {
+    color: #059ef6;
+    background-color: black;
+}
+
+/* Offset for internal links in toc */
+.toc::before {
+    content: "";
+    display: block;
+    margin-top: -20px;
+    visibility: hidden;
+}
+
+/* Table of Contents links */
+.toc-list li a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Hover effect for toc links */
+.toc-list li a:hover {
+    color: #059ef6;
+    font-size: 26px;
+    transition: 400ms;
+}
+
+/* Styling for the "Contents" label */
+.content-label{
+    color:white; 
+    font-size:36px;
+}
+
+/* Chapter styling */
+.chapter {
+    padding-left: 5px;
+}
+
+/* Chapter headings */
+.chapter h2 {
+    text-decoration: underline;
+    color: white;
+    font-size: 30px;
+}
+
+/* Internal link offset for chapter */
+.chapter::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+/* Back button styling */
+.back-button a {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hover effect for back button */
+.back-button a:hover {
+    font-size: 20px;
+    transition: 400ms;
+}
+
+/* Return button styling */
+.return-button {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect for return button */
+.return-button:hover {
+    content: url('./images/back-button.png');
+}
+
+/* Image container styling */
+.image-container {
+    flex-shrink: 0; /* Prevent image container from shrinking */
+    text-align: center;
+}
+
+.image-container h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.book_image {
+    width: 300px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Text content styling */
+.text-content {
+    flex: 1; /* Allow text content to take up remaining space */
+    color: white;
+}
+
+.text-content h1 {
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+}
+
+.rating {
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Chapter caption styling */
+.chapter-caption {
+    color: white;
+    width: 80%;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+/* Caption heading within chapters */
+.chapter-caption h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Caption list styling */
+.chapter-caption ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* List items in chapter caption */
+.chapter-caption li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* ============== ABOUT US ============== */
+/* About Us section */
+.about-us {
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.about-us h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+/* Team member card styling */
+.team-member {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for team member card */
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar styling in team member card */
+.team-member .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Bio styling within team member card */
+.team-member .bio {
+    text-align: left;
+}
+
+.team-member .bio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #059ef6;
+}
+
+.team-member .bio p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Video image styling */
+.video_image {
+    max-width: 80%; 
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0; 
+    padding-top: 50px;
+}
+
+/* Responsive iframe styling with 3:2 aspect ratio */
+iframe {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
+
+/*Font*/
+@font-face {
+    font-family: 'CustomFont';
+    src: url(fonts/Exo2-VariableFont_wght.ttf);
+}
+
+header { grid-area: h; }
+nav { grid-area: a; }
+main { grid-area: b; }
+footer { grid-area: f; }
+
+
+
+
+/*==================== ASKHSH 4 ====================*/
+
+/* ============== PHONE ============== */
+@media screen and (max-width: 700px) and (min-width: 0px){
+    body {
+        display: grid;
+        grid-template-areas: 
+            "h" 
+            "a" 
+            "b" 
+            "f";
+        grid-template-columns: 1fr;
+    }
+    
+    .home-container picture{
+        margin-right: 75px ;
+    }
+
+    .home-content h2{
+        margin-right: 100px;
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    .ul_list {
+        display: none;
+    }
+
+    .ul_list_for_phones ul {
+        display: none;
+        position: absolute; /* Στατική τοποθέτηση του υπομενού */
+        background-color: white; /* Χρώμα υπομενού */
+        list-style: none;
+        width: 140px; /* Σταθερό πλάτος για το κουτί */
+        height: min-content;
+        text-align: start; /* Κεντραρισμένο κείμενο */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Σκιά για καλύτερη εμφάνιση */
+    }
+
+    .ul_list_for_phones li {
+        position: relative;
+    }
+
+    .ul_list_for_phones li:hover > ul {
+        display: block; 
+        position: absolute;
+        flex-direction: column; /* Κάθετη στοίχιση των στοιχείων */
+        align-items: center;
+        justify-content: center; /* Κεντραρισμένο περιεχόμενο */
+    }
+
+    .ul_list_for_phones ul li {
+        padding: 10px 10px;
+        margin: 0; /* Αφαιρεί περιθώρια μεταξύ των στοιχείων */
+        
+    }
+
+    /* Hover effect for navigation links */
+    .ul_list_for_phones a:hover {
+        color: black; /*TA GRAMMATA*/
+    }  
+
+    .ul_list_for_phones li ul li a:hover::before {
+        width: 80%;
+    }
+
+    .ul_list_for_phones li ul li a::before {
+        content: '';
+        display: block;
+        height: 4px;
+        background-color: #444;
+        position: absolute;
+        top: 33px;
+        width: 0%;
+        transition: all ease-in-out 400ms;
+    }
+
+    ul.styled-list {
+        flex-direction: center;
+        padding-top: 15px;
+        margin-left: -50px;
+    }
+
+    ul.styled-list > li {
+        width: 100%; /* Ensure full width for each item */
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul.styled-list img.list-icon {
+        margin: 0 auto 10px auto; /* Center the image */
+        display: block;
+    }
+
+    ul.styled-list li ul li a {
+        text-align: center; /* Center links */
+    }
+
+    ul.styled-list li ul li {
+        margin-left: -30px;
+    }
+
+    .product-card {
+        width: 100%; /* 1 item per row */
+    }
+    
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .book_image {
+        margin: 0 auto; /* Center image */
+        padding-right: 0; /* Remove right padding */
+        margin-left: -100px;
+    }
+    .rating {
+        margin-right: 100px;
+        text-align: center;
+    }
+
+    .text-content h1{
+        margin-left: -80px;
+    }
+    .video_image{
+        margin-left: -10px;
+        padding-top: 0;
+    }
+}
+
+/* ============== TABLET ============== */
+@media screen and (max-width: 1100px) and (min-width: 701px){
+    body {
+        display: grid;
+        grid-template-areas: 
+            "h h" 
+            "a a" 
+            "b b" 
+            "f f";
+        grid-template-columns: auto 20%;
+    }
+
+    .home-container {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    .home_image {
+        flex: 0 0 50%; /* Image takes 50% of the container width */
+    }
+
+    .home-content {
+        flex: 0 0 50%; /* Content takes 50% of the container width */
+        text-align: left; /* Align content to the left */
+        max-width: 50vw; /* Content restricted to half the viewport width */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ul_list {
+        display: flex;
+    }
+
+    /* Hover effect for navigation links */
+    .ul_list a:hover {
+        color: black; /*TA GRAMMATA*/
+    }  
+
+    .ul_list_for_phones {
+        display: none;
+    }
+
+    .ul_list a:hover::before {
+        width: 100%;
+    }
+
+    .ul_list a::before {
+        content: '';
+        display: block;
+        height: 4px;
+        background-color: #444;
+        position: absolute;
+        top: 65px;
+        width: 0%;
+        transition: all ease-in-out 400ms;
+    }
+
+    ul.styled-list {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: auto; 
+        gap: 20px; 
+        padding: 15px; 
+        margin-left:-160px;
+    }
+
+    ul.styled-list > li {
+        width: auto; 
+        margin: 0;
+        margin-left:40px;
+        text-align: center; 
+        font-size: 20px;
+    }
+
+    ul.styled-list img.list-icon {
+        margin-bottom: 10px; /* Keep image spacing */
+    }
+
+    .product-card {
+        width: 40%; /* 2 items per row (taking into account the gap) */
+    }
+
+}
+
+/* ============== PC ============== */
+@media screen and (min-width: 1101px){
+    body {
+        display: grid;
+        grid-template-areas: 
+            "h h h"
+            "a b b"
+            "f f f";
+        grid-template-columns: auto 1fr 20%;
+    }
+
+    .home-container {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    .home_image {
+        flex: 0 0 50%; /* Image takes 50% of the container width */
+    }
+
+    .home-content {
+        flex: 0 0 50%; /* Content takes 50% of the container width */
+        text-align: left; /* Align content to the left */
+        max-width: 50vw; /* Content restricted to half the viewport width */
+    }
+
+
+    .ul_list {
+        display: flex;
+    }
+
+    /* Hover effect for navigation links */
+    .ul_list a:hover {
+        color: black; /*TA GRAMMATA*/
+    }  
+
+    .ul_list_for_phones {
+        display: none;
+    }
+
+    .ul_list a:hover::before {
+        width: 100%;
+    }
+
+    .ul_list a::before {
+        content: '';
+        display: block;
+        height: 4px;
+        background-color: #444;
+        position: absolute;
+        top: 65px;
+        width: 0%;
+        transition: all ease-in-out 400ms;
+    }
+
+    ul.styled-list ul {
+        margin-left: 60px;
+        padding-left: 0;
+    }
+
+    ul.styled-list li ul li {
+        margin-left: 15px;
+    }
+    
+    .product-card {
+        width: 22%; /* 4 items per row */
+    }
+
+}
+
